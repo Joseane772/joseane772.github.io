@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joseane Pereira — Software Engineer</title>
+<meta name="description" content="Portfolio of Joseane Pereira — Computer and Telematics Engineer, MSc. Systems programming, networks, and AI-application development.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <span class="brand">Joseane Pereira</span>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+    <nav class="links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Joseane Pereira</h1>
+    <p class="role">Computer &amp; Telematics Engineer, MSc</p>
+    <p class="lede">I build software across the stack &mdash; from protocol-level C inside an open-source 5G core, to REST APIs on AWS, to RAG-based AI applications. MSc in Computer and Telematics Engineering, University of Aveiro. Looking for an entry-level engineering role.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="assets/CV_Joseane_Pereira_EN.pdf" download>Download CV</a>
+      <a class="btn ghost" href="https://github.com/Joseane772" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn ghost" href="mailto:joseaneper62@gmail.com">Email me</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2 class="section-title">About</h2>
+    <p style="max-width:680px; color:var(--ink-soft); font-size:1rem;">
+      MSc graduate in Computer and Telematics Engineering (University of Aveiro) with hands-on experience across
+      network systems, AI/LLM applications, and full-stack software development. My thesis centered on integrating
+      a commercial network-management platform with an open-source 5G core &mdash; protocol-level programming,
+      systems integration, and real-time control. Alongside that, I've built a RAG-based chatbot on the OpenAI API
+      and a cloud-deployed REST API on AWS. I'm comfortable moving across a stack: backend, data, networks, and
+      the occasional frontend.
+    </p>
+  </div>
+</section>
+
+<section class="alt" id="experience">
+  <div class="wrap">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="exp-item">
+      <div class="exp-meta">2024&ndash;2026</div>
+      <div class="exp-body">
+        <h3>Mobile Network Systems Orchestration</h3>
+        <p class="sub">MSc Thesis &middot; University of Aveiro</p>
+        <p>
+          Built an external orchestration layer linking a commercial network-management platform (DataMiner) to an
+          open-source 5G core (Open5GS) through its native metrics, database, and control interfaces &mdash;
+          hands-on systems integration across heterogeneous platforms. Implemented a Python sidecar and modified
+          the Open5GS AMF in C to expose a REST endpoint for signalling behaviour the core didn't natively
+          support. Built a real-time, telemetry-driven traffic-shaping service (Prometheus metrics, Linux tc/HTB)
+          on the network's user-plane, and delivered the whole system as a reproducible, documented artifact
+          published on GitHub.
+        </p>
+        <div class="tag-row">
+          <span class="tag">Python</span><span class="tag">C</span><span class="tag">Open5GS</span>
+          <span class="tag">Prometheus</span><span class="tag">Linux tc/HTB</span><span class="tag">MongoDB</span>
+          <span class="tag">REST APIs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta">2024 &middot; Lisbon</div>
+      <div class="exp-body">
+        <h3>Team Lead, Deloitte Tech Experience</h3>
+        <p class="sub">Bootcamp / talent program &mdash; not employment</p>
+        <p>
+          Led a 5-person team building a document-grounded chatbot on the OpenAI API. Implemented
+          retrieval-augmented generation &mdash; embeddings and vector search &mdash; so every answer was
+          constrained to a limited internal document set rather than the model's general knowledge.
+        </p>
+        <div class="tag-row">
+          <span class="tag">OpenAI API</span><span class="tag">RAG</span><span class="tag">Embeddings</span>
+          <span class="tag">Vector Search</span><span class="tag">Python</span><span class="tag">Team Leadership</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta">2024</div>
+      <div class="exp-body">
+        <h3>AWS Product API</h3>
+        <p class="sub">Sky Careers &mdash; 1-week technical interview assessment, not employment</p>
+        <p>
+          Designed and built a product-management REST API in C# (ASP.NET Core) on AWS DynamoDB (via LocalStack
+          for local development), including a Docker Compose setup and a unit test suite &mdash; data modeling,
+          endpoint design, and cloud deployment under a tight deadline.
+        </p>
+        <div class="tag-row">
+          <span class="tag">C# / ASP.NET Core</span><span class="tag">AWS DynamoDB</span>
+          <span class="tag">Docker Compose</span><span class="tag">Unit Testing</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2 class="section-title">Projects</h2>
+    <div class="grid-cards">
+
+      <div class="card">
+        <p class="badge">Flagship &middot; MSc Thesis</p>
+        <h3>mythesis</h3>
+        <p class="desc">
+          External orchestration layer connecting DataMiner to Open5GS, with protocol-level C modifications to the
+          AMF, a Python sidecar, and Prometheus/Linux-tc-driven traffic shaping. Fully reproducible research
+          artifact &mdash; automation, config, and docs included.
+        </p>
+        <div class="links">
+          <a href="https://github.com/Joseane772/mythesis" target="_blank" rel="noopener">Repo &rarr;</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <p class="badge">Sky Careers &middot; Technical Assessment</p>
+        <h3>Product_API</h3>
+        <p class="desc">
+          ASP.NET Core Web API against AWS DynamoDB (via LocalStack), with Docker Compose for local dev and a real
+          unit test suite. Built in one week as a technical interview challenge &mdash; not a job.
+        </p>
+        <div class="links">
+          <a href="https://github.com/Joseane772/Product_API" target="_blank" rel="noopener">Repo &rarr;</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <p class="badge">Coursework &middot; Java</p>
+        <h3>Compiler Construction</h3>
+        <p class="desc">
+          An ANTLR-based compiler built from scratch &mdash; lexer, parser, semantic analysis, and code
+          generation, covering the full compilation pipeline end to end.
+        </p>
+        <div class="links">
+          <a href="https://github.com/Joseane772/Agl-Pojeto-de-compiladores" target="_blank" rel="noopener">Repo &rarr;</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <p class="badge">Personal &middot; Three.js / Vite</p>
+        <h3>City-Builder</h3>
+        <p class="desc">
+          An interactive 3D city-builder built with Three.js and Vite &mdash; real-time rendering, scene
+          management, and browser-based 3D interaction.
+        </p>
+        <div class="links">
+          <a href="https://github.com/Joseane772/City-Builder" target="_blank" rel="noopener">Repo &rarr;</a>
+          <a href="https://joseane772.github.io/City-Builder/" target="_blank" rel="noopener">Live demo &rarr;</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <p class="badge">Team Project &middot; 5 people</p>
+        <h3>Mão Solidária</h3>
+        <p class="desc">
+          A volunteer/campaign-matching web platform &mdash; registration for volunteers and organizers,
+          opportunity applications, and a points-based rewards system. Built with a 5-person team.
+        </p>
+        <div class="links">
+          <a href="https://github.com/Joseane772/Mao-Solidaria" target="_blank" rel="noopener">Repo &rarr;</a>
+          <a href="https://joseane772.github.io/Mao-Solidaria/" target="_blank" rel="noopener">Live demo &rarr;</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <p class="badge">Personal &middot; Shell</p>
+        <h3>dotfiles</h3>
+        <p class="desc">
+          Personal Linux environment configuration &mdash; Alacritty, Starship, Niri, and GTK theming. Daily-driver
+          setup, not a demo.
+        </p>
+        <div class="links">
+          <a href="https://github.com/Joseane772/dotfiles" target="_blank" rel="noopener">Repo &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="skills">
+  <div class="wrap">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>AI / LLM</h3>
+        <p>OpenAI API integration, prompt engineering, retrieval-augmented generation (embeddings, vector search).</p>
+      </div>
+      <div class="skill-group">
+        <h3>Networks &amp; Systems</h3>
+        <p>TCP/IP, UDP, routing, Wireshark, firewalls &amp; VPNs, network/service virtualization, heterogeneous &amp; mobile network architectures.</p>
+      </div>
+      <div class="skill-group">
+        <h3>Programming &amp; Development</h3>
+        <p>Python, C/C++, C#, Java, JavaScript, React; Git; SQL; REST API design; AWS (hands-on); Docker Compose (local dev); agile methodologies; Linux (Fedora, Arch, Ubuntu).</p>
+      </div>
+      <div class="skill-group">
+        <h3>Parallel &amp; High-Performance Computing</h3>
+        <p>pthreads, MPI, CUDA; architecture simulation and optimization.</p>
+      </div>
+      <div class="skill-group">
+        <h3>Embedded Systems &amp; Signal Processing</h3>
+        <p>Sensors/actuators, microcontrollers, C/C++ for hardware, digital filters, DSP, MATLAB &amp; Simulink, analog/digital electronics, RF/wireless fundamentals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2 class="section-title">Education</h2>
+
+    <div class="edu-block">
+      <h3>MSc in Computer and Telematics Engineering</h3>
+      <p class="meta">University of Aveiro &middot; 2024&ndash;2026 &middot; Thesis grade 16/20</p>
+    </div>
+    <div class="edu-block">
+      <h3>BSc in Computer and Informatics Engineering</h3>
+      <p class="meta">University of Aveiro &middot; 2021&ndash;2024</p>
+    </div>
+
+    <details class="coursework">
+      <summary>Full coursework &mdash; 42 courses across both degrees (click to expand)</summary>
+      <div class="course-groups">
+
+        <div class="course-group">
+          <h4>Programming &amp; Software Engineering</h4>
+          <p style="color:var(--ink-soft); font-size:0.88rem; margin:0 0 8px;">Core programming, data structures, compiler construction, databases, and interface design.</p>
+          <ul>
+            <li>Fundamentos de Programação</li>
+            <li>Programação Orientada a Objetos</li>
+            <li>Algoritmos e Estruturas de Dados</li>
+            <li>Compiladores</li>
+            <li>Laboratórios de Informática</li>
+            <li>Interação Humano-Computador</li>
+            <li>Bases de Dados</li>
+          </ul>
+        </div>
+
+        <div class="course-group">
+          <h4>Computer Systems &amp; Architecture</h4>
+          <p style="color:var(--ink-soft); font-size:0.88rem; margin:0 0 8px;">Digital logic, computer architecture, operating systems, and real-time/embedded design &mdash; the systems grounding behind the thesis's C-level work.</p>
+          <ul>
+            <li>Introdução aos Sistemas Digitais</li>
+            <li>Laboratório de Sistemas Digitais</li>
+            <li>Arquitetura de Computadores I</li>
+            <li>Arquitetura de Computadores II</li>
+            <li>Sistemas de Operação</li>
+            <li>Arquiteturas de Alto Desempenho</li>
+            <li>Arquiteturas para Sistemas Embutidos</li>
+            <li>Sistemas Operativos e de Tempo-Real</li>
+          </ul>
+        </div>
+
+        <div class="course-group">
+          <h4>Networks &amp; Telecommunications</h4>
+          <p style="color:var(--ink-soft); font-size:0.88rem; margin:0 0 8px;">Network protocols, mobile communications, information theory, and security &mdash; the direct academic root of the thesis.</p>
+          <ul>
+            <li>Redes de Comunicações I</li>
+            <li>Redes de Comunicações II</li>
+            <li>Comunicações Móveis</li>
+            <li>Segurança em Redes de Comunicações</li>
+            <li>Segurança Informática e nas Organizações</li>
+            <li>Informação e Codificação</li>
+          </ul>
+        </div>
+
+        <div class="course-group">
+          <h4>Distributed &amp; Large-Scale Systems</h4>
+          <p style="color:var(--ink-soft); font-size:0.88rem; margin:0 0 8px;">Distributed system design, large-scale and reconfigurable computing, mobile robotics, and future-internet architectures.</p>
+          <ul>
+            <li>Sistemas Distribuídos</li>
+            <li>Computação em Larga Escala</li>
+            <li>Computação Reconfigurável</li>
+            <li>Robótica Móvel Inteligente</li>
+            <li>Internet do Futuro</li>
+          </ul>
+        </div>
+
+        <div class="course-group">
+          <h4>AI, Data &amp; Theory</h4>
+          <p style="color:var(--ink-soft); font-size:0.88rem; margin:0 0 8px;">AI fundamentals, probability, discrete math, systems analysis, and computer graphics.</p>
+          <ul>
+            <li>Inteligência Artificial</li>
+            <li>Métodos Probabilísticos para Engenharia Informática</li>
+            <li>Matemática Discreta</li>
+            <li>Análise de Sistemas</li>
+            <li>Introdução à Computação Gráfica</li>
+          </ul>
+        </div>
+
+        <div class="course-group">
+          <h4>Math &amp; Physics Foundations</h4>
+          <p style="color:var(--ink-soft); font-size:0.88rem; margin:0 0 8px;">Linear algebra, calculus, electromagnetism, and signal theory underpinning the engineering coursework.</p>
+          <ul>
+            <li>Álgebra Linear e Geometria Analítica</li>
+            <li>Cálculo I</li>
+            <li>Cálculo II</li>
+            <li>Mecânica e Campo Eletromagnético</li>
+            <li>Sinais e Sistemas Eletrónicos</li>
+          </ul>
+        </div>
+
+        <div class="course-group">
+          <h4>Projects &amp; Seminars</h4>
+          <p style="color:var(--ink-soft); font-size:0.88rem; margin:0 0 8px;">A year-long capstone project, a research seminar, and a character-design elective.</p>
+          <ul>
+            <li>Projeto em Engenharia de Computadores e Informática</li>
+            <li>Seminário</li>
+            <li>Desenho de Personagens</li>
+          </ul>
+        </div>
+
+        <div class="course-group">
+          <h4>Transferable Skills</h4>
+          <p style="color:var(--ink-soft); font-size:0.88rem; margin:0 0 8px;">Required cross-disciplinary modules &mdash; project management, design, communication, embedded sensor programming, data viz, and web programming.</p>
+          <ul>
+            <li>Gestão de Projetos</li>
+            <li>Design Thinking</li>
+            <li>Técnicas de Comunicação e Apresentações</li>
+            <li>Microcontroladores e Interação com Sensores e Atuadores</li>
+            <li>Visualização de Dados</li>
+            <li>Programação Web</li>
+          </ul>
+        </div>
+
+      </div>
+    </details>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-list">
+      <a href="mailto:joseaneper62@gmail.com">joseaneper62@gmail.com</a>
+      <span>+351 935 202 600</span>
+      <a href="https://github.com/Joseane772" target="_blank" rel="noopener">github.com/Joseane772</a>
+      <span>Aveiro, Portugal</span>
+    </div>
+    <a class="btn ghost" style="border-color:#fff; color:#fff;" href="assets/CV_Joseane_Pereira_EN.pdf" download>Download CV</a>
+  </div>
+  <div class="wrap fine">Portuguese &mdash; Native (C2) &nbsp;|&nbsp; English &mdash; Advanced (C1)</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
