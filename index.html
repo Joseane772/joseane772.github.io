@@ -17,19 +17,21 @@
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#board">Now</a>
       <a href="#skills">Skills</a>
       <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
+  <div class="scroll-progress" id="scrollProgress"></div>
 </header>
 
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <p class="eyebrow">MSc &middot; University of Aveiro &middot; Open to Work</p>
-      <h1>Software,<br>Systems,<br>Signal.</h1>
-      <p class="lede">I build across the stack: from protocol-level C inside an open-source 5G core, to REST APIs on AWS, to RAG-based AI applications. Computer &amp; Telematics Engineer, MSc, looking for an entry-level role.</p>
+      <p class="eyebrow"><span class="live-dot"></span>MSc &middot; University of Aveiro &middot; Open to Work</p>
+      <h1><span class="h1-line">Software,</span><span class="h1-line">Systems,</span><span class="h1-line">Signal.</span></h1>
+      <p class="lede">I build across the stack: from software that automatically manages a 5G network, to REST APIs on AWS, to RAG-based AI applications. Computer &amp; Telematics Engineer, MSc, looking for my first role in networks, telecom or software.</p>
       <div class="hero-actions">
         <a class="btn primary" href="assets/CV_Joseane_Pereira_EN.pdf" download>Download CV</a>
         <a class="btn ghost" href="https://github.com/Joseane772" target="_blank" rel="noopener">GitHub &rarr;</a>
@@ -48,7 +50,7 @@
         <div><span class="key">focus</span>&nbsp;&nbsp;&nbsp;<span class="val">Systems &middot; Networks &middot; AI apps</span></div>
         <div><span class="key">based</span>&nbsp;&nbsp;&nbsp;<span class="val">Aveiro, Portugal</span></div>
         <div><span class="key">status</span>&nbsp;&nbsp;<span class="val">Open to work</span></div>
-        <div><span class="prompt">$</span> <span style="opacity:.6;">_</span></div>
+        <div><span class="prompt">$</span> <span class="cursor">_</span></div>
       </div>
     </div>
   </div>
@@ -127,7 +129,7 @@
     <p style="max-width:680px; color:var(--ink-soft); font-size:1rem;">
       MSc graduate in Computer and Telematics Engineering (University of Aveiro) with hands-on experience across
       network systems, AI/LLM applications, and full-stack software development. My thesis centered on integrating
-      a commercial network-management platform with an open-source 5G core, involving protocol-level programming,
+      a commercial network-management platform with an open-source 5G core, involving protocol analysis,
       systems integration, and real-time control. Alongside that, I've built a RAG-based chatbot on the OpenAI API
       and a cloud-deployed REST API on AWS. I'm comfortable moving across a stack: backend, data, networks, and
       the occasional frontend.
@@ -148,14 +150,13 @@
         <p>
           Built an external orchestration layer linking a commercial network-management platform (DataMiner) to an
           open-source 5G core (Open5GS) through its native metrics, database, and control interfaces:
-          hands-on systems integration across heterogeneous platforms. Implemented a Python sidecar and modified
-          the Open5GS AMF in C to expose a REST endpoint for signalling behaviour the core didn't natively
-          support. Built a real-time, telemetry-driven traffic-shaping service (Prometheus metrics, Linux tc/HTB)
+          hands-on systems integration across heterogeneous platforms. Implemented a Python sidecar, and analysed
+          the Open5GS core's C code to pinpoint where congestion signalling towards devices was missing. Built a real-time, telemetry-driven traffic-shaping service (Prometheus metrics, Linux tc/HTB)
           on the network's user-plane, and delivered the whole system as a reproducible, documented artifact
           published on GitHub.
         </p>
         <div class="tag-row">
-          <span class="tag">Python</span><span class="tag">C</span><span class="tag">Open5GS</span>
+          <span class="tag">Python</span><span class="tag">C# automation</span><span class="tag">Open5GS</span><span class="tag">DataMiner</span>
           <span class="tag">Prometheus</span><span class="tag">Linux tc/HTB</span><span class="tag">MongoDB</span>
           <span class="tag">REST APIs</span>
         </div>
@@ -209,8 +210,8 @@
         <p class="badge">Flagship &middot; MSc Thesis</p>
         <h3>mythesis</h3>
         <p class="desc">
-          External orchestration layer connecting DataMiner to Open5GS, with protocol-level C modifications to the
-          AMF, a Python sidecar, and Prometheus/Linux-tc-driven traffic shaping. Fully reproducible research
+          External orchestration layer connecting DataMiner to Open5GS, with a Python sidecar,
+          Prometheus/Linux-tc-driven traffic shaping, and an analysis of the core's C code that pinpoints missing congestion signalling. Fully reproducible research
           artifact, with automation, config, and docs included.
         </p>
         <div class="links">
@@ -269,6 +270,19 @@
       </div>
 
       <div class="card">
+        <p class="badge">Personal &middot; Lua / mpv</p>
+        <h3>mpv-vlc-redesign</h3>
+        <p class="desc">
+          An mpv user script that brings Juxtopposed's community VLC redesign to life: thin control bar, chaptered
+          seekbar, cone volume, and OpenSubtitles search. Built with Claude Code under my direction and review;
+          design credit to Juxtopposed.
+        </p>
+        <div class="links">
+          <a href="https://github.com/Joseane772/mpv-vlc-redesign" target="_blank" rel="noopener">Repo &rarr;</a>
+        </div>
+      </div>
+
+      <div class="card">
         <p class="badge">Personal &middot; Shell</p>
         <h3>dotfiles</h3>
         <p class="desc">
@@ -280,6 +294,30 @@
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<section class="board-section" id="board">
+  <div class="wrap">
+    <div class="board-head">
+      <h2 class="section-title">Now</h2>
+      <p class="board-lede">What I'm working on, what's next, and what's shipped. Cards can be dragged between columns.</p>
+      <div class="board-filters" id="boardFilters" role="group" aria-label="Filter cards by area"></div>
+    </div>
+    <div class="board" id="board-columns">
+      <div class="column" data-status="todo">
+        <div class="column-head"><span class="col-dot todo"></span><h3>To do</h3><span class="count"></span></div>
+        <div class="column-body"></div>
+      </div>
+      <div class="column" data-status="doing">
+        <div class="column-head"><span class="col-dot doing"></span><h3>In progress</h3><span class="count"></span></div>
+        <div class="column-body"></div>
+      </div>
+      <div class="column" data-status="done">
+        <div class="column-head"><span class="col-dot done"></span><h3>Done</h3><span class="count"></span></div>
+        <div class="column-body"></div>
+      </div>
     </div>
   </div>
 </section>
@@ -349,7 +387,7 @@
 
         <div class="course-group">
           <h4>Computer Systems &amp; Architecture</h4>
-          <p style="color:var(--ink-soft); font-size:0.88rem; margin:0 0 8px;">Digital logic, computer architecture, operating systems, and real-time/embedded design, the systems grounding behind the thesis's C-level work.</p>
+          <p style="color:var(--ink-soft); font-size:0.88rem; margin:0 0 8px;">Digital logic, computer architecture, operating systems, and real-time/embedded design, the systems grounding behind the thesis.</p>
           <ul>
             <li>Introdução aos Sistemas Digitais</li>
             <li>Laboratório de Sistemas Digitais</li>
